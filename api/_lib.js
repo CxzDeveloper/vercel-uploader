@@ -10,7 +10,7 @@ export function guard(req, res) {
     res.status(401).json({ error: 'Password salah' })
     return false
   }
-  if (!process.env.VERCEL_TOKEN) {
+  if (!process.env.VERCELL_TOKEN) {
     res.status(500).json({ error: 'VERCEL_TOKEN belum diatur di environment variables' })
     return false
   }
