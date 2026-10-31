@@ -1,5 +1,5 @@
 export const V = 'https://api.vercel.com'
-export const hdr = () => ({ Authorization: `Bearer ${process.env.VERCEL_TOKEN}` })
+export const hdr = () => ({ Authorization: `Bearer ${process.env.VERCELL_TOKEN}` })
 export const q = (extra = '') => {
   const t = process.env.VERCEL_TEAM_ID
   return `?${t ? `teamId=${t}&` : ''}${extra}`
